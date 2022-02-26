@@ -1,26 +1,23 @@
-var mentor1 = "Daniel";
-var mentor2 = "Irina";
-var mentor3 = "Mimi";
-var mentor4 = "Rob";
-var mentor5 = "Yohannes";
+const mentor1 = "Daniel";
+const mentor2 = "Irina";
+const mentor3 = "Mimi";
+const mentor4 = "Rob";
+const mentor5 = "Yohannes";
 
-function concatGreeting(mentor1,mentor2,mentor3,mentor4,mentor5) {
 
-    return  "Hello " + mentor1 +"\n"
-           +"Hello " + mentor2 +"\n"
-           +"Hello " + mentor3 +"\n"
-           +"Hello " + mentor4 +"\n"
-           +"Hello " + mentor5;
+function getMentoresUppercase(mentor){
+    return mentor.toUpperCase();
 }
 
-function createUppercase(mentor1,mentor2,mentor3,mentor4,mentor5) {
-
-    return  concatGreeting(mentor1,mentor2,mentor3,mentor4,mentor5).toUpperCase();
-    
+function concatShoutyGreeting(mentor){
+    return "HELLO " + getMentoresUppercase(mentor);
 }
 
 
-console.log(createUppercase(mentor1,mentor2,mentor3,mentor4,mentor5));
-
+console.log(concatGreeting(mentor1));
+console.log(concatGreeting(mentor2));
+console.log(concatGreeting(mentor3));
+console.log(concatGreeting(mentor4));
+console.log(concatGreeting(mentor5));
 
 
