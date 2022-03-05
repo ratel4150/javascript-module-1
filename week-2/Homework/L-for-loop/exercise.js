@@ -17,6 +17,6 @@ function sumTillNum(num){
 		
 	}
 	return sumas.toString().replace(/,/g,"+ ")
-}
+}	
 
 console.log("Sum from 0 to " + n + " is: " + sumTillNum(n));
