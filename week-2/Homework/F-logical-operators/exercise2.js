@@ -4,8 +4,26 @@
   This program calls some functions that are either missing or incomplete.
   Update the code so that you get the expected result.
 */
+function isNegative(number) {
+  return number < 0 ;
 
-function isNegative() {}
+ 
+}
+
+function isBetween5and10(number) {
+  return number > 5 && number < 10
+  
+}
+
+function isShortName(string) {
+  return string.length < 7
+  
+}
+
+function startsWithD(string) {
+  return string.charAt(0).toUpperCase() == "D"
+  
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE

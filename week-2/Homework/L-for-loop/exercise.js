@@ -10,6 +10,13 @@ let n = 10;
 
 function sumTillNum(num){
 	//your code here
+    let sumas =[];
+	for (let counter = 0; counter <= n; counter++) {
+		
+		sumas.push(counter)
+		
+	}
+	return sumas.toString().replace(/,/g,"+ ")
 }
 
 console.log("Sum from 0 to " + n + " is: " + sumTillNum(n));

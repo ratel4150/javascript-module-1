@@ -13,3 +13,7 @@ const daysOfWeek = [
   "Saturday",
   "Sunday",
 ];
+
+function toLowerCase(){
+  return daysOfWeek.toString().toLowerCase();
+}

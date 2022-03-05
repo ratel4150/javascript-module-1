@@ -10,6 +10,15 @@ let n = 10;
 
 function sumTillNum(num){
 	//your code here
+	let sumas =[];
+	count =0;
+while (count <num) {
+    
+	count +=1;
+	sumas.push(count)
+	
+}
+return sumas.toString().replace(/,/g,"+")
 }
 
 console.log("Sum from 0 to " + n + " is: " + sumTillNum(n));
