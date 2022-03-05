@@ -14,6 +14,24 @@ const daysOfWeek = [
   "Sunday",
 ];
 
-function toLowerCase(){
-  return daysOfWeek.toString().toLowerCase();
+  let element =[]
+function setArray(array){
+  
+  
+    for (let i = 0; i < array.length; i++) {
+        
+         element.push(array[i]);
+    }
+    return element.sort(function(a,b) {
+      
+    return a.indexOf("W") - b.indexOf("M");
+    
+})
+   
 }
+
+
+
+
+
+console.log(setArray(daysOfWeek))
