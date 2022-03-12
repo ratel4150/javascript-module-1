@@ -13,3 +13,19 @@ console.log(longNameThatStartsWithA);
 
 /* EXPECTED OUTPUT */
 // "Alexandra"
+
+
+function findLongNameThatStartsWithA(names){
+  
+  let nameFind=names.find(function (Name) {
+
+    return Name.length > 7 && (Name.charAt(0)==="A") 
+    
+  })
+
+  return nameFind
+
+  
+
+}
+
