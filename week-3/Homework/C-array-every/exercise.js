@@ -1,15 +1,12 @@
+var students=["omar","Austine","Dany"]
+var group=["austine",]
 
-function arrays(group,students){
-  
 
-  return students === group
-  }
-  
-  console.log("+++++++")
-  console.log(groupIsOnlyStudents)
-  console.log("+++++++")
-  
-  
+
+function isStudent(name) {
+  return students.includes(name)
+}
+  var groupIsOnlyStudents=group.every(isStudent)
   
   if (groupIsOnlyStudents) {
     console.log("The group contains only students");

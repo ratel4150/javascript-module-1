@@ -1,4 +1,4 @@
-[
+const items=[
     100,
     "iSMael",
     55,
@@ -14,10 +14,15 @@
     "ElaMIN",
   ];
 
-  function eliminateNumbers(array) {
-
-    array.forEach(element => {
-         
-    });
-      
+  function isString(item) {
+    return typeof item ==="string"
   }
+
+  function doTheMagic(array) {
+
+    return items.filter(isString).map(element => element.toUpperCase() +"!")
+  }
+
+  console.log(doTheMagic(items));
+
+

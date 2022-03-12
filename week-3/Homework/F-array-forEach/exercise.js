@@ -9,6 +9,15 @@
 
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
+
+let a=arr.array.forEach(element => {
+  impar=element%2
+
+  if(impar!=0)
+  
+  return "fiz"
+})
+
 /* EXPECTED OUTPUT */
 
 /*
@@ -28,3 +37,12 @@ var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 14
 'FizzBuzz'
 */
+
+
+if (condition) {
+  
+} if (condition) {
+  
+}else{
+  
+}
