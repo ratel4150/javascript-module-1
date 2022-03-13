@@ -4,9 +4,10 @@
   Write a function that will return all street names which contain 'Lane' in their name.
 */
 
-function getLanes() {
-
-}
+function getLanes(array) {
+  let a=array.filter(function(element){return element.includes("Lane")})
+  return a
+  }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
