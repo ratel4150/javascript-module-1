@@ -8,9 +8,10 @@
   NOTE: don't include any element that is not a "family".
 */
 
-function colonisers() {
-
-}
+function colonisers(array) {
+  let a=array.filter(function(element){return element.charAt(0)==="A" && element.length >6})
+  return a
+  }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
