@@ -70,3 +70,7 @@ names.forEach(log).map(formatName); // ERROR
 ```
 
 This code does not work because `forEach()` does not return a new array (it returns `undefined`). The code is therefore attempting to call `.map()` on `undefined`, and `undefined` does not have a `.map()` method.
+
+
+
+
