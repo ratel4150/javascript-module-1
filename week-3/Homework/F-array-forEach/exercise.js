@@ -7,16 +7,41 @@
   An array with numbers 1-15 has been provided.
 */
 
+
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
+let format=function(element){
+ switch (element) {
+  case 3:
+  case 6:
+  case 9:
+  case 12:
+    return "Fizz"
+    
+    break;
+    
+    case 5:
+    case 10:
+    return "Buzz"
+    
+    break;
+    
+    case 15:
+    return "FizzBuzz"
+    
+    break;
 
-let a=arr.array.forEach(element => {
-  impar=element%2
+  default:
+  return element
+    break;
+}
+}
 
-  if(impar!=0)
-  
-  return "fiz"
-})
+let log=function(element){
+  console.log(element)
+}
+
+arr.map(format).forEach(log);
 
 /* EXPECTED OUTPUT */
 
@@ -39,10 +64,3 @@ let a=arr.array.forEach(element => {
 */
 
 
-if (condition) {
-  
-} if (condition) {
-  
-}else{
-  
-}
